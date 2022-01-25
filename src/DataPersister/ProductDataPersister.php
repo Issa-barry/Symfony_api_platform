@@ -15,6 +15,7 @@ class ProductDataPersister implements DataPersisterInterface
 
   public function supports($data): bool
   {
+    //Si data est un produit
      return $data instanceof Product;
   }
 
