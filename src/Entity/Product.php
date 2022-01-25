@@ -39,6 +39,18 @@ class Product
      */
     private $updatedAt;
 
+ 
+    //LE CONSTRUCTEUR
+    
+    public function __construct()
+    {
+        $this->createdAt = new \DateTimeImmutable();
+        $this->updatedAt = new \DateTimeImmutable();
+    }
+
+
+    //GETTERS & SETTERS
+
     public function getId(): ?int
     {
         return $this->id;
