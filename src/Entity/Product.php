@@ -34,6 +34,7 @@ class Product
     /**
      * @ORM\Column(type="text")
      * @Groups({"read","write"})
+     * @Assert\NotBlank()
      */
     private $description;
 
